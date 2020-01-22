@@ -89,8 +89,7 @@ def solarize_(image, threshold=128):
     This function has identical outputs to ``PIL.ImageOps.solarize``.
     It does however work in-place.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See ``~imgaug.augmenters.arithmetic.invert_(min_value=None and max_value=None)``.
 
@@ -119,8 +118,7 @@ def solarize(image, threshold=128):
 
     This function has identical outputs to ``PIL.ImageOps.solarize``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See ``~imgaug.augmenters.arithmetic.invert_(min_value=None and max_value=None)``.
 
@@ -148,8 +146,7 @@ def posterize_(image, bits):
     This function has identical outputs to ``PIL.ImageOps.posterize``.
     It does however work in-place.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.color.quantize_uniform_to_n_bits_`.
 
@@ -177,8 +174,7 @@ def posterize(image, bits):
 
     This function has identical outputs to ``PIL.ImageOps.posterize``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.color.quantize_uniform_to_n_bits`.
 
@@ -208,8 +204,7 @@ def equalize(image, mask=None):
     This function is identical in inputs and outputs to
     ``PIL.ImageOps.equalize``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.pil_equalize_`.
 
@@ -246,8 +241,7 @@ def equalize_(image, mask=None):
     This function has identical outputs to ``PIL.ImageOps.equalize``.
     It does however work in-place.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -358,8 +352,7 @@ def autocontrast(image, cutoff=0, ignore=None):
     This function has identical outputs to ``PIL.ImageOps.autocontrast``.
     The speed is almost identical.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -541,8 +534,7 @@ def enhance_color(image, factor):
     This function has identical outputs to
     ``PIL.ImageEnhance.Color``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -583,8 +575,7 @@ def enhance_contrast(image, factor):
     This function has identical outputs to
     ``PIL.ImageEnhance.Contrast``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -626,8 +617,7 @@ def enhance_brightness(image, factor):
     This function has identical outputs to
     ``PIL.ImageEnhance.Brightness``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -668,8 +658,7 @@ def enhance_sharpness(image, factor):
     This function has identical outputs to
     ``PIL.ImageEnhance.Sharpness``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -731,8 +720,7 @@ def filter_blur(image):
 
     This is the same as using PIL's ``PIL.ImageFilter.BLUR`` kernel.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -767,8 +755,7 @@ def filter_smooth(image):
 
     This is the same as using PIL's ``PIL.ImageFilter.SMOOTH`` kernel.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -803,8 +790,7 @@ def filter_smooth_more(image):
 
     This is the same as using PIL's ``PIL.ImageFilter.SMOOTH_MORE`` kernel.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -839,8 +825,7 @@ def filter_edge_enhance(image):
 
     This is the same as using PIL's ``PIL.ImageFilter.EDGE_ENHANCE`` kernel.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -876,8 +861,7 @@ def filter_edge_enhance_more(image):
     This is the same as using PIL's ``PIL.ImageFilter.EDGE_ENHANCE_MORE``
     kernel.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -912,8 +896,7 @@ def filter_find_edges(image):
 
     This is the same as using PIL's ``PIL.ImageFilter.FIND_EDGES`` kernel.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -948,8 +931,7 @@ def filter_contour(image):
 
     This is the same as using PIL's ``PIL.ImageFilter.CONTOUR`` kernel.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -984,8 +966,7 @@ def filter_emboss(image):
 
     This is the same as using PIL's ``PIL.ImageFilter.EMBOSS`` kernel.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -1020,8 +1001,7 @@ def filter_sharpen(image):
 
     This is the same as using PIL's ``PIL.ImageFilter.SHARPEN`` kernel.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -1056,8 +1036,7 @@ def filter_detail(image):
 
     This is the same as using PIL's ``PIL.ImageFilter.DETAIL`` kernel.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -1166,8 +1145,7 @@ def warp_affine(image,
     This function has identical outputs to
     ``PIL.Image.transform`` with ``method=PIL.Image.AFFINE``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; fully tested
         * ``uint16``: no
@@ -1283,8 +1261,7 @@ class Solarize(arithmetic.Invert):
 
     The outputs are identical to PIL's ``solarize()``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :class:`~imgaug.augmenters.arithmetic.Invert`.
 
@@ -1336,8 +1313,7 @@ class Posterize(colorlib.Posterize):
     i.e. all three classes are right now guarantueed to have the same
     outputs as PIL's function.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :class:`~imgaug.augmenters.color.Posterize`.
 
@@ -1349,8 +1325,7 @@ class Equalize(meta.Augmenter):
 
     This augmenter has identical outputs to ``PIL.ImageOps.equalize``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.equalize_`.
 
@@ -1397,8 +1372,7 @@ class Autocontrast(contrastlib._ContrastFuncWrapper):
 
     See :func:`~imgaug.augmenters.pillike.autocontrast` for more details.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.autocontrast`.
 
@@ -1501,8 +1475,7 @@ class EnhanceColor(_EnhanceBase):
 
     This augmenter has identical outputs to ``PIL.ImageEnhance.Color``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.enhance_color`.
 
@@ -1554,8 +1527,7 @@ class EnhanceContrast(_EnhanceBase):
 
     This augmenter has identical outputs to ``PIL.ImageEnhance.Contrast``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.enhance_contrast`.
 
@@ -1609,8 +1581,7 @@ class EnhanceBrightness(_EnhanceBase):
     This augmenter has identical outputs to
     ``PIL.ImageEnhance.Brightness``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.enhance_brightness`.
 
@@ -1663,8 +1634,7 @@ class EnhanceSharpness(_EnhanceBase):
     This augmenter has identical outputs to
     ``PIL.ImageEnhance.Sharpness``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.enhance_sharpness`.
 
@@ -1738,8 +1708,7 @@ class FilterBlur(_FilterBase):
     This augmenter has identical outputs to
     calling ``PIL.Image.filter`` with kernel ``PIL.ImageFilter.BLUR``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.filter_blur`.
 
@@ -1775,8 +1744,7 @@ class FilterSmooth(_FilterBase):
     This augmenter has identical outputs to
     calling ``PIL.Image.filter`` with kernel ``PIL.ImageFilter.SMOOTH``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.filter_smooth`.
 
@@ -1812,8 +1780,7 @@ class FilterSmoothMore(_FilterBase):
     This augmenter has identical outputs to
     calling ``PIL.Image.filter`` with kernel ``PIL.ImageFilter.BLUR``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.filter_smooth_more`.
 
@@ -1851,8 +1818,7 @@ class FilterEdgeEnhance(_FilterBase):
     calling ``PIL.Image.filter`` with kernel
     ``PIL.ImageFilter.EDGE_ENHANCE``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.filter_edge_enhance`.
 
@@ -1890,8 +1856,7 @@ class FilterEdgeEnhanceMore(_FilterBase):
     calling ``PIL.Image.filter`` with kernel
     ``PIL.ImageFilter.EDGE_ENHANCE_MORE``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.filter_edge_enhance_more`.
 
@@ -1929,8 +1894,7 @@ class FilterFindEdges(_FilterBase):
     calling ``PIL.Image.filter`` with kernel
     ``PIL.ImageFilter.FIND_EDGES``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.filter_find_edges`.
 
@@ -1966,8 +1930,7 @@ class FilterContour(_FilterBase):
     This augmenter has identical outputs to
     calling ``PIL.Image.filter`` with kernel ``PIL.ImageFilter.CONTOUR``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.filter_contour`.
 
@@ -2004,8 +1967,7 @@ class FilterEmboss(_FilterBase):
     This augmenter has identical outputs to
     calling ``PIL.Image.filter`` with kernel ``PIL.ImageFilter.EMBOSS``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.filter_emboss`.
 
@@ -2041,8 +2003,7 @@ class FilterSharpen(_FilterBase):
     This augmenter has identical outputs to
     calling ``PIL.Image.filter`` with kernel ``PIL.ImageFilter.SHARPEN``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.filter_sharpen`.
 
@@ -2078,8 +2039,7 @@ class FilterDetail(_FilterBase):
     This augmenter has identical outputs to
     calling ``PIL.Image.filter`` with kernel ``PIL.ImageFilter.DETAIL``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.filter_detail`.
 
@@ -2132,8 +2092,7 @@ class Affine(geometric.Affine):
         top left corner as the transformation center. To mirror that
         behaviour, use ``center=(0.0, 0.0)``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.pillike.warp_affine`.
 

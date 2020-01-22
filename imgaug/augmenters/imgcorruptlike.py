@@ -102,8 +102,7 @@ def _call_imgcorrupt_func(fname, seed, convert_to_pil, *args, **kwargs):
     The dtype support below is basically a placeholder to which the
     augmentation functions can point to decrease the amount of documentation.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
         * ``uint8``: yes; indirectly tested (1)
         * ``uint16``: no
@@ -249,8 +248,7 @@ def get_corruption_names(subset="common"):
 def apply_gaussian_noise(x, severity=1, seed=None):
     """Apply ``gaussian_noise`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -280,8 +278,7 @@ def apply_gaussian_noise(x, severity=1, seed=None):
 def apply_shot_noise(x, severity=1, seed=None):
     """Apply ``shot_noise`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -311,8 +308,7 @@ def apply_shot_noise(x, severity=1, seed=None):
 def apply_impulse_noise(x, severity=1, seed=None):
     """Apply ``impulse_noise`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -342,8 +338,7 @@ def apply_impulse_noise(x, severity=1, seed=None):
 def apply_speckle_noise(x, severity=1, seed=None):
     """Apply ``speckle_noise`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -373,8 +368,7 @@ def apply_speckle_noise(x, severity=1, seed=None):
 def apply_gaussian_blur(x, severity=1, seed=None):
     """Apply ``gaussian_blur`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -404,8 +398,7 @@ def apply_gaussian_blur(x, severity=1, seed=None):
 def apply_glass_blur(x, severity=1, seed=None):
     """Apply ``glass_blur`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -495,8 +488,7 @@ def _apply_glass_blur_imgaug(x, severity=1):
 def apply_defocus_blur(x, severity=1, seed=None):
     """Apply ``defocus_blur`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -526,8 +518,7 @@ def apply_defocus_blur(x, severity=1, seed=None):
 def apply_motion_blur(x, severity=1, seed=None):
     """Apply ``motion_blur`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -557,8 +548,7 @@ def apply_motion_blur(x, severity=1, seed=None):
 def apply_zoom_blur(x, severity=1, seed=None):
     """Apply ``zoom_blur`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -588,8 +578,7 @@ def apply_zoom_blur(x, severity=1, seed=None):
 def apply_fog(x, severity=1, seed=None):
     """Apply ``fog`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -619,8 +608,7 @@ def apply_fog(x, severity=1, seed=None):
 def apply_frost(x, severity=1, seed=None):
     """Apply ``frost`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -650,8 +638,7 @@ def apply_frost(x, severity=1, seed=None):
 def apply_snow(x, severity=1, seed=None):
     """Apply ``snow`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -681,8 +668,7 @@ def apply_snow(x, severity=1, seed=None):
 def apply_spatter(x, severity=1, seed=None):
     """Apply ``spatter`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -712,8 +698,7 @@ def apply_spatter(x, severity=1, seed=None):
 def apply_contrast(x, severity=1, seed=None):
     """Apply ``contrast`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -743,8 +728,7 @@ def apply_contrast(x, severity=1, seed=None):
 def apply_brightness(x, severity=1, seed=None):
     """Apply ``brightness`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -774,8 +758,7 @@ def apply_brightness(x, severity=1, seed=None):
 def apply_saturate(x, severity=1, seed=None):
     """Apply ``saturate`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -805,8 +788,7 @@ def apply_saturate(x, severity=1, seed=None):
 def apply_jpeg_compression(x, severity=1, seed=None):
     """Apply ``jpeg_compression`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -836,8 +818,7 @@ def apply_jpeg_compression(x, severity=1, seed=None):
 def apply_pixelate(x, severity=1, seed=None):
     """Apply ``pixelate`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -867,8 +848,7 @@ def apply_pixelate(x, severity=1, seed=None):
 def apply_elastic_transform(image, severity=1, seed=None):
     """Apply ``elastic_transform`` from ``imagecorruptions``.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike._call_imgcorrupt_func`.
 
@@ -930,8 +910,7 @@ def apply_elastic_transform(image, severity=1, seed=None):
 #     augmenter_class.__doc__ = """
 #     Wrapper around ``imagecorruptions.corruptions.%s``.
 #
-#     Supported dtypes
-#     ----------------
+#     **Supported dtypes**:
 #
 #     See :func:`~imgaug.augmenters.imgcorruptlike.apply_%s`.
 #
@@ -1006,8 +985,7 @@ class GaussianNoise(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_gaussian_noise`.
 
@@ -1053,8 +1031,7 @@ class ShotNoise(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_shot_noise`.
 
@@ -1100,8 +1077,7 @@ class ImpulseNoise(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_impulse_noise`.
 
@@ -1147,8 +1123,7 @@ class SpeckleNoise(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_speckle_noise`.
 
@@ -1194,8 +1169,7 @@ class GaussianBlur(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_gaussian_blur`.
 
@@ -1241,8 +1215,7 @@ class GlassBlur(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_glass_blur`.
 
@@ -1288,8 +1261,7 @@ class DefocusBlur(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_defocus_blur`.
 
@@ -1335,8 +1307,7 @@ class MotionBlur(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_motion_blur`.
 
@@ -1382,8 +1353,7 @@ class ZoomBlur(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_zoom_blur`.
 
@@ -1429,8 +1399,7 @@ class Fog(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_fog`.
 
@@ -1476,8 +1445,7 @@ class Frost(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_frost`.
 
@@ -1523,8 +1491,7 @@ class Snow(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_snow`.
 
@@ -1570,8 +1537,7 @@ class Spatter(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_spatter`.
 
@@ -1617,8 +1583,7 @@ class Contrast(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_contrast`.
 
@@ -1664,8 +1629,7 @@ class Brightness(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_brightness`.
 
@@ -1711,8 +1675,7 @@ class Saturate(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_saturate`.
 
@@ -1758,8 +1721,7 @@ class JpegCompression(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_jpeg_compression`.
 
@@ -1805,8 +1767,7 @@ class Pixelate(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_pixelate`.
 
@@ -1852,8 +1813,7 @@ class ElasticTransform(_ImgcorruptAugmenterBase):
 
         This augmenter only affects images. Other data is not changed.
 
-    Supported dtypes
-    ----------------
+    **Supported dtypes**:
 
     See :func:`~imgaug.augmenters.imgcorruptlike.apply_elastic_transform`.
 
