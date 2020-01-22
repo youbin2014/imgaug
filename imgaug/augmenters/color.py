@@ -3047,14 +3047,14 @@ class KMeansColorQuantization(_AbstractColorQuantization):
 
         minimum of (
             :class:`~imgaug.augmenters.color.ChangeColorspace`,
-            :func:`~imgaug.augmenters.color.quantize_colors_kmeans`
+            :func:`~imgaug.augmenters.color.quantize_kmeans`
         )
 
     if (image size > max_size):
 
         minimum of (
             :class:`~imgaug.augmenters.color.ChangeColorspace`,
-            :func:`~imgaug.augmenters.color.quantize_colors_kmeans`,
+            :func:`~imgaug.augmenters.color.quantize_kmeans`,
             :func:`~imgaug.imgaug.imresize_single_image`
         )
 
@@ -3461,14 +3461,14 @@ class UniformColorQuantizationToNBits(_AbstractColorQuantization):
 
         minimum of (
             :class:`~imgaug.augmenters.color.ChangeColorspace`,
-            :func:`~imgaug.augmenters.color.quantize_colors_uniform`
+            :func:`~imgaug.augmenters.color.quantize_uniform`
         )
 
     if (image size > max_size):
 
         minimum of (
             :class:`~imgaug.augmenters.color.ChangeColorspace`,
-            :func:`~imgaug.augmenters.color.quantize_colors_uniform`,
+            :func:`~imgaug.augmenters.color.quantize_uniform`,
             :func:`~imgaug.imgaug.imresize_single_image`
         )
 
